@@ -2,7 +2,11 @@ import { diffDates, diffToHtml } from "./datecalc.js";
 import { formatError } from "./utils.js";
 import { addListenerShowEl } from "./btnSwitcher.js";
 import { playBellSound } from "./howlerScript.js";
+import xor from 'lodash/xor';
+import "../sounds/bell-sound.mp3";
+import "../css/style.scss";
 
+console.log(xor([2,1], [2,3]));
 
 const dateCalcForm = document.getElementById('datecalc');
 const dateCalcResult = document.getElementById('datecalc__result');
